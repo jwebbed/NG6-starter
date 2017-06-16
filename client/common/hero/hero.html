@@ -1,5 +1,4 @@
-<div class="hero">
-  <div ng-repeat='person in $ctrl.people'>
-    <card person='person'></card>
-  </div>
+<div class="hero" ng-style='$ctrl.gridStyles'>
+  <card ng-repeat='person in $ctrl.people' person='person' ng-style='$ctrl.cardHeight'>
+  </card>
 </div>

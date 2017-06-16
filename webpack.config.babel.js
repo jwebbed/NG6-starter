@@ -36,10 +36,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         use: [
 					{
-						loader: 'angular-hot-loader',
-						options: {
-          		rootElement: 'body'
-        	}
+						loader: 'ng-annotate-loader',
 					},
 
           {

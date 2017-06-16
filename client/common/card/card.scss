@@ -1,0 +1,19 @@
+.card {
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  background-color: white;
+  padding: 10px;
+  margin: 0px;
+
+  height: calc(100% - 20px);
+
+  .head {
+    width: 100%;
+  }
+
+  .content {
+    color: black;
+    font-size: 1.5em;
+  }
+}

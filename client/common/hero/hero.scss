@@ -2,11 +2,11 @@
 
 .hero {
   background-color: $darkBgColor;
-  height: 50rem;
-  padding: 3rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  //height: 50rem;
+  padding: 50px;
+
+  display: grid;
+  grid-auto-flow: row;
 
   * {
     color: $lightTextColor;

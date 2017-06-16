@@ -3,7 +3,7 @@ import angular from 'angular';
 import heroComponent from './hero.component';
 
 let heroModule = angular.module('hero', [
-//  uiRouter
+
 ])
 
 .component('hero', heroComponent)
