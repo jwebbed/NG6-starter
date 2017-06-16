@@ -1,30 +1,20 @@
-import data from './directory.json';
 import { map, reduce } from 'lodash';
 
 class HeroController {
-  constructor($window, $scope) {
+  constructor($window, $scope, dataService) {
     this.name = 'hero';
-    this.people = data.Collection.Items.Item;
-
-    // for testing cut this the fuck down
-    this.people = this.people.slice(0, 60);
-    //console.log(this.people);
-    /*
-    this.people = map(this.people, (person) => {
-      let np = { ...person };
-      np.Facets = reduce(person.Facets.Facet, (total, facet) => {
-        total[facet.Name] = facet.String.Value;
-      }, {});
-      return np;
-    });
-    */
+    this.people = dataService.getPeople();
 
     this.setGrid();
-    angular.element($window).on('resize', () => {
+
+    let update = () => {
       $scope.$apply(() => {
+        this.people = dataService.getPeople();
         this.setGrid();
       })
-    });
+    }
+
+    angular.element($window).on('resize', () => update());
   }
 
   setGrid() {
