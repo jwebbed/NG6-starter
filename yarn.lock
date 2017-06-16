@@ -98,6 +98,10 @@ angular-hot-loader@^0.9.7:
     source-map "^0.5.6"
     to-factory "^1.0.0"
 
+angular-ui-bootstrap@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/angular-ui-bootstrap/-/angular-ui-bootstrap-2.5.0.tgz#2facefb915386655dc5f44150258032517236d01"
+
 angular-ui-router@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-1.0.3.tgz#bf2494caae95c37cf01af3761d89747cfed2db45"

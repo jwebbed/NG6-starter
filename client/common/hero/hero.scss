@@ -4,6 +4,9 @@
   background-color: $darkBgColor;
   height: 50rem;
   padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   * {
     color: $lightTextColor;
