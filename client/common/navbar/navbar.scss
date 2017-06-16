@@ -5,9 +5,21 @@
   background-color: $primaryColor;
   padding: 1rem;
 
+
+
   .nav-links,
   .logo {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    img {
+      height: 100px;
+      display: inline-block;
+      padding-right:20px;
+    }
+    h1 {
+      display: inline-block;
+      align:bottom;
+    }
   }
 
   .logo {

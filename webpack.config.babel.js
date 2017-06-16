@@ -35,9 +35,13 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: [
-          {
-            loader: "ng-annotate-loader"
-          },
+					{
+						loader: 'angular-hot-loader',
+						options: {
+          		rootElement: 'body'
+        	}
+					},
+
           {
             loader: "babel-loader",
             options: {
